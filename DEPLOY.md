@@ -1,6 +1,8 @@
 # Выкладка NetLancer на хостинг
 
-Сайт нужен с **PHP 8+** и **MySQL/MariaDB**. GitHub хранит только код.
+Сайт нужен с **PHP 8+** и **MySQL/MariaDB**. Код: https://github.com/BingoBit/netlancer
+
+Готовый архив для FTP (без `config.php`): `C:\OSPanel\home\netlancer-deploy.zip`
 
 ## 1. Хостинг
 
@@ -52,3 +54,15 @@ chmod -R 775 assets/uploads/resumes
 Откройте сайт в браузере. Войдите тестовым аккаунтом из `README.md` (например `anna@example.com` / `12345678`).
 
 Если видите ошибку про базу — перепроверьте `config.php` и импорт SQL.
+
+## Вариант через Docker
+
+Если на VPS установлен Docker:
+
+```bash
+git clone https://github.com/BingoBit/netlancer.git
+cd netlancer
+docker compose up -d --build
+```
+
+Сайт: `http://сервер:8080` (логин БД задан в `docker-compose.yml`).

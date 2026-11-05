@@ -2,6 +2,9 @@
 
 Учебная фриланс-биржа на PHP + MySQL: заказы, резюме, отклики, личный кабинет и чат.
 
+Репозиторий: https://github.com/BingoBit/netlancer  
+Инструкция по выкладке на хостинг: [DEPLOY.md](DEPLOY.md)
+
 ## Требования
 
 - PHP 8.0+ (расширения `pdo_mysql`, `mbstring`, `fileinfo`)
