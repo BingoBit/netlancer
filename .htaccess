@@ -1,0 +1,14 @@
+# Apache: корень сайта = папка проекта с index.php
+Options -Indexes
+DirectoryIndex index.php
+
+# Запрет прямого доступа к служебным файлам
+<FilesMatch "^(config\.php|config\.example\.php|database\.sql|\.gitignore|README\.md)$">
+    Require all denied
+</FilesMatch>
+
+# PHP: загрузки
+<IfModule mod_php.c>
+    php_value upload_max_filesize 2M
+    php_value post_max_size 8M
+</IfModule>
