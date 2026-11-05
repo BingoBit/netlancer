@@ -1,0 +1,19 @@
+# Локальные настройки БД (на хостинге создаётся отдельно)
+config.php
+
+# Загрузки пользователей
+assets/uploads/resumes/*
+!assets/uploads/resumes/.htaccess
+!assets/uploads/resumes/.gitkeep
+
+# OSPanel / служебное
+.osp/
+.idea/
+.vscode/
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Временные скрипты миграций
+migrate_*.php
